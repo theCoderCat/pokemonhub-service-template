@@ -1,0 +1,13 @@
+.navbar {
+  width: 100%;
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
+}
+.navbar.navbar--fixed {
+  margin-bottom: 0;
+  z-index: $zindex-navbar-fixed;
+  min-height: $header_height;
+  border: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}

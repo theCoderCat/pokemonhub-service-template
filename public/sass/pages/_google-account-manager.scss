@@ -1,0 +1,44 @@
+.gam-container {
+	.flex-row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: stretch;
+		align-content: stretch;
+	}
+	
+	#chart-panel {
+		flex-grow: 1;
+		margin-right: 20px;
+	}
+	
+	#filter-panel {
+		flex-grow: 2;
+	}
+	
+	.filter-row {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: stretch;
+		margin-top: 20px;
+		.input-section {
+			flex-grow: 1;
+			padding-right: 30px;
+		}
+		
+		.action-section {
+			display: flex;
+			flex-grow: 0;
+			flex-basis: 100px;
+			
+			.btn {
+				width: 100%;
+			}
+		}
+	}
+}

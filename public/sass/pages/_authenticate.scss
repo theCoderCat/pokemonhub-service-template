@@ -1,0 +1,217 @@
+.page-login,
+.page-register,
+.page-forgot {
+  background: url('/images/main-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100%;
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  a.dim--50:hover {
+    color: $reverse;
+  }
+
+  .info {
+    padding: 20px 0 0;
+    max-width: 420px;
+    margin: 0 auto 20px;
+
+    h2 {
+      font-size: 18px;
+      color: $dark;
+    }
+  }
+
+  //
+  .login-body,
+  .register-body {
+    width: 100%;
+    max-width: 320px;
+    margin: 10px auto;
+    padding: 10px 30px;
+  }
+
+  .form-container {
+  }
+
+  .form-group {
+    position: relative;
+
+    .input__icon {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      width: 26px;
+      height: 26px;
+    }
+
+    .icon--username {
+      background: transparent url('/images/icon-username.png') center center no-repeat;
+      background-size: cover;
+    }
+
+    .icon--password {
+      background: transparent url('/images/icon-password.png') center center no-repeat;
+      background-size: cover;
+    }
+
+    .icon--email {
+      background: transparent url('/images/icon-email.png') center center no-repeat;
+      background-size: cover;
+    }
+
+    .input-lg {
+      padding: 12px 45px;
+    }
+  }
+
+  // authenticate pages's elements only
+  .input--pill {
+    border-radius: 100px;
+    font-size: 13px;
+  }
+
+  .input--transparent {
+    border: 0px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    @include placeholder {
+      color: rgba(255, 255, 255, 0.4);
+    }
+    transition: background ease-in-out 0.2s, box-shadow ease-in-out 0.2s;
+
+    &:focus {
+      background: rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .form-control {
+    height: 50px;
+  }
+
+  .button--pill {
+    border-radius: 100px;
+    height: 50px;
+    line-height: 50px;
+    border: 0px;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0;
+  }
+
+  .button--orange {
+    background: $color-orange;
+    color: white;
+
+    &:hover {
+      background: darken($color-orange, 5%);
+    }
+  }
+
+  .button--transparent {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    transition: background ease-in-out 0.2s, box-shadow ease-in-out 0.2s;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    &:active, &.active {
+      box-shadow: none;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+.separate-text {
+  position: relative;
+  span {
+    width: 10%;
+    color: $dark;
+  }
+
+  &:before {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    content: '';
+    display: block;
+    width: 45%;
+    border-top: 1px solid #A8A8A8;
+  }
+
+  &:after {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    content: '';
+    display: block;
+    width: 45%;
+    border-top: 1px solid #A8A8A8;
+  }
+
+}
+
+.login-header,
+.register-header {
+  margin-bottom: 50px;
+
+  @media (max-width: $screen-xs-min) {
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .logo {
+    background: rgba(0,0,0,0) center top no-repeat;
+    background-image: url('/images/logo.png');
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+
+    @media (max-width: $screen-xs-min) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+
+    @media (max-width: $screen-xs-min) {
+      font-size: 30px;
+    }
+  }
+}
+
+.login-footer {
+  max-width: 320px;
+  margin: 10px auto;
+
+  .footer__left-side {
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+
+    @media (max-width: $screen-xs-min) {
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .footer__right-side {
+    @extend .footer__left-side;
+    text-align: right;
+
+    @media (max-width: $screen-xs-min) {
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+  }
+}

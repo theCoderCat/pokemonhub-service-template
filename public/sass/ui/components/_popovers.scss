@@ -1,0 +1,47 @@
+.popover {
+  background-color: rgba(0,0,0,0.8);
+  border: none;
+  border-radius: $border-radius-base;
+  font-family: $font-family-base;
+  padding: 0;
+
+  &.left > .arrow {
+    border-left-color: transparent;
+    &:after {
+      border-left-color: rgba(0,0,0,0.8);
+    }
+  }
+
+  &.bottom > .arrow {
+    border-bottom-color: transparent;
+    &:after {
+      border-bottom-color: rgba(0,0,0,0.8);
+    }
+  }
+
+  &.right > .arrow {
+    border-right-color: transparent;
+    &:after {
+      border-right-color: rgba(0,0,0,0.8);
+    }
+  }
+
+  &.top > .arrow {
+    border-top-color: transparent;
+    &:after {
+      border-top-color: rgba(0,0,0,0.8);
+    }
+  }
+}
+
+.popover-title {
+    background-color: rgba(0,0,0,0);
+    border-bottom: none;
+    color: $bright;
+    font-weight: bold;
+    padding: 8px 14px 0;
+}
+
+.popover-content {
+    color: $bright;
+}

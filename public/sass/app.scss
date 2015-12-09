@@ -1,0 +1,40 @@
+@import "../../../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "global/vars";
+@import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../../bower_components/sweetalert/dev/sweetalert";
+
+// sections
+@import "sections/layouts";
+@import "sections/shared";
+@import "sections/sidebar";
+@import "sections/header";
+@import "sections/body";
+@import "sections/loader";
+
+// components
+@import "ui/ui";
+
+// Plugins, overrides plugins' style
+@import "plugins/bootstrap-slider";
+@import "plugins/responsive-tables";
+@import "plugins/easypiecharts";
+@import "plugins/toastr";
+@import "plugins/sparkline";
+@import "plugins/jquery-steps";
+@import "plugins/angular-ui-tree";
+@import "plugins/morris";
+@import "plugins/jqvmap";
+@import "plugins/ng-tags-input";
+
+// Pages
+@import "pages/dashboard";
+@import "pages/pages";
+@import "pages/err";
+@import "pages/lock-screen";
+@import "pages/tasks";
+@import "pages/authenticate";
+@import "pages/profile";
+@import "pages/ui";
+@import "pages/demo";
+@import "pages/homepage";
+@import "pages/google-account-manager";

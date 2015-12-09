@@ -1,0 +1,70 @@
+.page-lock {
+  .lock-centered {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -95px;
+
+    @media screen and (min-width: $screen-sm) {
+      margin-top: -75px;
+    }
+  }
+
+  .lock-container {
+    position: relative;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .lock-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    .lock-img img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      border: 6px solid $reverse;
+      background: $reverse;
+      margin-right: 20px;
+
+      @media screen and (min-width: $screen-sm) {
+        left: 33%;
+        width: 150px;
+        height: 150px;
+        border: 10px solid $reverse;
+      }
+    }
+
+    .lock-credential {
+      padding-left: 180px;
+      .lock-user {
+        display: block;
+        width: 50%;
+        height: 50px;
+        line-height: 50px;
+        margin-top: 50px;
+        padding: 0 20px;
+        @include border-left-radius($border-radius-base);
+        // color: $brand-primary;
+      }
+
+      .lock-pwd {
+        input {
+          height: 50px;
+          color: $gray;
+          border: 0;
+        }
+
+        .btn-submit {
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          margin-top: -5px;
+        }
+      }
+    }
+  }
+}

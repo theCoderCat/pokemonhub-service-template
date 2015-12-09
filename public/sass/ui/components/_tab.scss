@@ -1,0 +1,196 @@
+// Dependency: Angular UI Bootstrap
+
+.ui-tab-container {
+
+  box-shadow: $shadow-z-1;
+  .ui-tab .nav-tabs {
+    margin-bottom: 0;
+  }
+
+  .nav-tabs {
+    background-color: transparent;
+    border-bottom: 0;
+    &.nav-justified {
+      border-bottom: 0;
+      > li {
+        > a {
+          border-bottom-color: transparent;
+        }
+      }
+    }
+
+    > li {
+      margin-bottom: 0;
+      // margin-top: 4px;
+      &.active {
+        // margin-top: 0;
+        > a {
+          background-color: $reverse;
+          border-left: 0;
+          border-right: 0;
+          border-bottom: 0;
+          border-top: 3px solid $brand-primary;
+          color: $text-color;
+          padding: 12px 22px;
+          &:hover {
+            background-color: $reverse;
+            border-top: 3px solid $brand-primary;
+          }
+        }
+      }
+      > a {
+        background-color: transparent;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
+        border-top: 3px solid transparent;
+        color: $text-color;
+        margin-right: 3px;
+        padding: 10px 22px;
+        &:hover {
+          border-left: 0;
+          border-right: 0;
+          border-bottom: 0;
+          border-top: 3px solid lighten($brand-primary, 10%);
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    padding: 15px;
+    // box-shadow: $shadow-z-1;
+    background-color: $reverse;
+    border-radius: $border-radius-base;
+  }
+
+  // Color
+  &.ui-tab-dark {
+    .nav-tabs {
+      > li {
+        &.active {
+          margin-top: 0;
+          > a {
+            border-top-color: $dark;
+            &:hover {
+              border-top-color: $dark;
+            }
+          }
+        }
+        > a {
+          &:hover {
+            border-top-color: lighten($dark, 50%);
+          }
+        }
+      }
+    }
+  }
+  &.ui-tab-success {
+    .nav-tabs {
+      > li {
+        &.active {
+          margin-top: 0;
+          > a {
+            border-top-color: $brand-success;
+            &:hover {
+              border-top-color: $brand-success;
+            }
+          }
+        }
+        > a {
+          &:hover {
+            border-top-color: lighten($brand-success, 10%);
+          }
+        }
+      }
+    }
+  }
+  &.ui-tab-info {
+    .nav-tabs {
+      > li {
+        &.active {
+          margin-top: 0;
+          > a {
+            border-top-color: $brand-info;
+            &:hover {
+              border-top-color: $brand-info;
+            }
+          }
+        }
+        > a {
+          &:hover {
+            border-top-color: lighten($brand-info, 10%);
+          }
+        }
+      }
+    }
+  }
+  &.ui-tab-warning {
+    .nav-tabs {
+      > li {
+        &.active {
+          margin-top: 0;
+          > a {
+            border-top-color: $brand-warning;
+            &:hover {
+              border-top-color: $brand-warning;
+            }
+          }
+        }
+        > a {
+          &:hover {
+            border-top-color: lighten($brand-warning, 10%);
+          }
+        }
+      }
+    }
+  }
+  &.ui-tab-danger {
+    .nav-tabs {
+      > li {
+        &.active {
+          margin-top: 0;
+          > a {
+            border-top-color: $brand-danger;
+            &:hover {
+              border-top-color: $brand-danger;
+            }
+          }
+        }
+        > a {
+          &:hover {
+            border-top-color: lighten($brand-danger, 10%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.ui-tab {
+  .nav-tabs {
+    margin-bottom: 15px;
+    &.nav-justified {
+      > li {
+        &.active {
+          > a {
+            border-bottom-color: transparent;
+          }
+        }
+      }
+    }
+
+    > li {
+      &.active {
+        > a {
+          background-color: $reverse;
+        }
+      }
+    }
+    a {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
