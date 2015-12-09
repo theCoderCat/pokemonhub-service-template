@@ -6,12 +6,38 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "async": "*",
+    "babel-core": "^6.3.15",
     "body-parser": "~1.13.2",
+    "connect-busboy": "*",
     "cookie-parser": "~1.3.5",
-    "debug": "~2.2.0",
-    "express": "~4.13.1",
-    "jade": "~1.11.0",
-    "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0"
+    "crypto": "*",
+    "debug": "^2.2.0",
+    "errorhandler": "*",
+    "express": "~4.13.3",
+    "jade": "^1.11.0",
+    "mojs": "^0.2.0",
+    "mongoose": "~4.1.11",
+    "morgan": "^1.6.1",
+    "node-uuid": "*",
+    "node-zookeeper-client": "*",
+    "nodemon": "^1.8.1",
+    "rabbit.js": "*",
+    "redis": "~2.2.4",
+    "request": "*",
+    "response-time": "*",
+    "serve-favicon": "^2.3.0",
+    "winston": "*",
+    "winston-logstash": "*"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^6.1.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-nodemon": "^2.0.4",
+    "gulp-sass": "^2.1.0",
+    "gulp-sourcemap": "^1.0.1",
+    "requirejs": "^2.1.22"
   }
 }
