@@ -6,10 +6,12 @@ exports = module.exports = {
 
 	ip: "127.0.0.1", //set to null to auto get public IP (when deploy on server)
 
+	port: '30000',
+
 	rest_port: 0,
 
 	service_name: "example",
-	
+
 	service_path: null,
 
 	redis_config: {
@@ -20,7 +22,7 @@ exports = module.exports = {
 
 	mongo_config: {
 		enable: false,
-		location: 'mongodb://127.0.0.1:27017/'+exports.service_name
+		location: 'mongodb://127.0.0.1:27017/' + exports.service_name
 	},
 
 	//for message queue
@@ -35,7 +37,7 @@ exports = module.exports = {
 		ip: "127.0.0.1",
 	},
 
-	
+
 
 	//remote the item in service_usage if you dont use
 	service_usage : {
@@ -61,4 +63,3 @@ exports = module.exports = {
 		}
 	},
 };
-

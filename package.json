@@ -32,12 +32,6 @@
   },
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-babel": "^6.1.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-nodemon": "^2.0.4",
-    "gulp-sass": "^2.1.0",
-    "gulp-sourcemap": "^1.0.1",
-    "requirejs": "^2.1.22"
+    "gulp-eslint": "^1.1.1"
   }
 }
